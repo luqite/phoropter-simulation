@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 强行撑开根容器，防止某些弹性布局坍塌导致白屏 */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  background-color: #f1f5f9; /* slate-100 的底色，方便测试是否加载样式 */
+  overflow-x: hidden;
+}
